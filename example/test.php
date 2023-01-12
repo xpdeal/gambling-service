@@ -2,17 +2,17 @@
 
 require_once '../vendor/autoload.php';
 
+use Xpdeal\GamblingServices\Services\DoubleService;
 use Xpdeal\GamblingServices\Services\RandomService;
 
 function dd($data)
 {
-    // echo '<pre>';
+    echo '<pre>';
     print_r($data);
-    //echo '</pre>';
+    echo '</pre>';
 }
 
-//$randon = new Hash;
+$randon = new DoubleService;
 
-dd(RandomService::flip(['Vermelho', 'Preto']));
-
+dd($randon->run());
 // jordan -> 0y9DOalJ

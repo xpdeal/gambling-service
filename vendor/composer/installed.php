@@ -3,13 +3,22 @@
         'name' => 'xpdeal/gambling-services',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '83dc24efae95f1ab308f2e58343e52d412b861ae',
+        'reference' => '4f218597f26adca198571c86b0c11d4a44eea45f',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'dev' => true,
     ),
     'versions' => array(
+        'brick/math' => array(
+            'pretty_version' => '0.10.2',
+            'version' => '0.10.2.0',
+            'reference' => '459f2781e1a08d52ee56b0b1444086e038561e3f',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../brick/math',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'doctrine/inflector' => array(
             'pretty_version' => '2.0.6',
             'version' => '2.0.6.0',
@@ -206,6 +215,32 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../psr/simple-cache',
             'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'ramsey/uuid' => array(
+            'pretty_version' => '5.x-dev',
+            'version' => '5.9999999.9999999.9999999-dev',
+            'reference' => '5f5aadce1fdc0fb8861843e8973cbfe5700e9a00',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../ramsey/uuid',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'rhumsaa/uuid' => array(
+            'dev_requirement' => false,
+            'replaced' => array(
+                0 => '5.x-dev',
+            ),
+        ),
+        'rogervila/provably-fair' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '90a2bb6bbee30eab12a39c5632672427f18bfc94',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../rogervila/provably-fair',
+            'aliases' => array(
+                0 => '9999999-dev',
+            ),
             'dev_requirement' => false,
         ),
         'sebastian/cli-parser' => array(
@@ -415,7 +450,7 @@
         'xpdeal/gambling-services' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '83dc24efae95f1ab308f2e58343e52d412b861ae',
+            'reference' => '4f218597f26adca198571c86b0c11d4a44eea45f',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

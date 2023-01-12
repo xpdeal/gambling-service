@@ -18,7 +18,9 @@
     ],
     "require": {
         "php": "^8.0",
-        "illuminate/support": "^9.39"
+        "illuminate/support": "^9.39",
+        "ramsey/uuid": "5.x-dev",
+        "rogervila/provably-fair": "dev-master"
     },
     "require-dev": {
         "laravel/pint": "^1.4",
