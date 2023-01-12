@@ -3,6 +3,8 @@
 namespace Xpdeal\GamblingServices;
 
 use Illuminate\Support\ServiceProvider;
+use Xpdeal\GamblingServices\Facades\Hash;
+use Xpdeal\GamblingServices\Services\HashService;
 
 class GamblingServicesServiceProvider extends ServiceProvider
 {
@@ -55,6 +57,10 @@ class GamblingServicesServiceProvider extends ServiceProvider
         // Register the main class to use with the facade
         $this->app->singleton('gambling-services', function () {
             return new GamblingServices;
+        });
+
+        $this->app->bind('hash', function ($app) {
+            return new HashService();
         });
 
         $this->publishes([

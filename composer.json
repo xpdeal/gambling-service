@@ -48,7 +48,8 @@
                 "Xpdeal\\GamblingServices\\GamblingServicesServiceProvider"
             ],
             "aliases": {
-                "GamblingServices": "Xpdeal\\GamblingServices\\GamblingServicesFacade"
+                "GamblingServices": "Xpdeal\\GamblingServices\\GamblingServicesFacade",
+                "Hash": "Xpdeal\\GamblingServices\\Facedes\\Hash"
             }
         }
     }
